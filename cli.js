@@ -48,7 +48,7 @@ ws.on('open', function() {
 ws.on('message', function(data) {
     switch(process.argv[2]) {
         case "reference":
-            var reference = data.reference;
+            var reference = JSON.parse(data).reference;
             if (reference) {
                 console.log(removeMd(reference, {
                     stripListLeaders: true,
@@ -60,7 +60,7 @@ ws.on('message', function(data) {
             }
             break;
         case "list":
-            var items = data.items;
+            var items = JSON.parse(data).items;
             if (items) {
                 console.log(`References: ${items.references.join(', ')}`);
                 console.log(`Catalogs: ${items.catalogs.join(', ')}`);
@@ -73,6 +73,5 @@ ws.on('message', function(data) {
             help();
             process.exit(1);
     }
-    console.log(data);
     ws.close();
 });

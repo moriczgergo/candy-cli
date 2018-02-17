@@ -1,6 +1,6 @@
 {
   "name": "candy-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI for Candy.",
   "main": "cli.js",
   "repository": "https://github.com/moriczgergo/candy-cli",
