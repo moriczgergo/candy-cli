@@ -1,0 +1,17 @@
+{
+  "name": "candy-cli",
+  "version": "1.0.0",
+  "description": "A CLI for Candy.",
+  "main": "cli.js",
+  "repository": "https://github.com/moriczgergo/candy-cli",
+  "author": "skiilaa",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "remove-markdown": "^0.2.2",
+    "ws": "^4.0.0"
+  },
+  "bin": {
+    "candy": "cli.js"
+  }
+}
