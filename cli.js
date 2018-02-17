@@ -42,7 +42,6 @@ ws.on('open', function() {
             help();
             process.exit(1);
     }
-	console.log("Opened connection, sending test command...");
 });
 
 ws.on('message', function(data) {
