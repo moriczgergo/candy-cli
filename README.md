@@ -15,3 +15,5 @@ A command line interface for Candy.
 
  * `reference` - Displays the specified reference. (ex. `candy reference /helloWorld`)
  * `list` - Lists and seperates catalogs and references in the specified catalog. (ex. `candy list /`)
+ * `create` - Creates a reference or catalog. (ex. `candy create reference /helloWorld`, `candy create reference /helloWorld "# Hi!"`, `candy create catalog /helloCatalog`)
+ * `edit` - Edits and existing reference. (ex. `candy edit /helloWorld "# Hi!\n\nHello!\n"`)
